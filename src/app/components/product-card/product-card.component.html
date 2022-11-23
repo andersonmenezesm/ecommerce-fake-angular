@@ -1,0 +1,8 @@
+<div *ngFor="let product of products" class="product-card-wrapper">
+  <div class="product-card">
+    <h2 class="product-name">{{ product.name }}</h2>
+    <p>{{ product.description }}</p>
+
+    <h3 class="product-price">{{ product.price | currency: 'BRL' }}</h3>
+  </div>
+</div>
